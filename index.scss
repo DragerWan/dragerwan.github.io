@@ -81,12 +81,13 @@ div.project {
         display: flex;
 
     }
+    div.result {
+        display: flex;
+
+    }
     ul {
         padding-inline-start: 1.2em;
         margin-block-start: 0;
+        margin-block-end: .3em;
     }
-}
-
-body {
-    font-size: .9em;
 }

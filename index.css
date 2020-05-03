@@ -8,16 +8,13 @@ p {
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: sans-serif;
 }
 
 ol, ul {
-  -webkit-padding-start: 2em;
-          padding-inline-start: 2em;
-  -webkit-margin-before: .2em;
-          margin-block-start: .2em;
+  padding-inline-start: 2em;
+  margin-block-start: .2em;
 }
 
 main {
@@ -32,14 +29,9 @@ main {
 }
 
 #title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-content: flex-end;
+  align-items: flex-end;
   margin: 1.5em 0 1em;
 }
 
@@ -73,8 +65,6 @@ span.time {
 }
 
 p {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -84,8 +74,7 @@ h3 {
 }
 
 h2 {
-  -webkit-margin-after: .5em;
-          margin-block-end: .5em;
+  margin-block-end: .5em;
   font-size: 1.3em;
 }
 
@@ -94,19 +83,16 @@ div.project {
 }
 
 div.project div.main-work {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  display: flex;
+}
+
+div.project div.result {
   display: flex;
 }
 
 div.project ul {
-  -webkit-padding-start: 1.2em;
-          padding-inline-start: 1.2em;
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-}
-
-body {
-  font-size: .9em;
+  padding-inline-start: 1.2em;
+  margin-block-start: 0;
+  margin-block-end: .3em;
 }
 /*# sourceMappingURL=index.css.map */
