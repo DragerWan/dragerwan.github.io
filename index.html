@@ -23,9 +23,9 @@
         <section id="advantage">
             <h2>自我评价</h2>
             <ol>
-                <li>熟练使用 React 框架开发Web应用，熟悉 ES6、HTML、CSS3 的新特性。</li>
-                <li>熟悉 MySQL、Redis、Restful API 设计和 Golang 后台开发。</li>
-                <li>善于学习，善于分析解决问题，喜欢具有挑战性的任务。</li>
+                <li>熟练使用 React 框架开发 Web 应用，熟悉 Webpack、Babel 等构建工具，熟悉 ES6、HTML、CSS3 的新特性。</li>
+                <li>熟悉 MySQL、Redis 和 Restful API 设计，了解 Golang 后台开发。</li>
+                <li>善于学习，善于分析解决问题，喜欢具有挑战性的任务。追求更棒的用户体验。</li>
             </ol>
         </section>
         <section id="education">
@@ -38,8 +38,9 @@
             <h2>工作经历</h2>
             <div class="work">
                 <h3><span class="time">2017.09 至今</span>深圳梨享计算有限公司</h3>
-                <p><span class="title">公司简介:</span>利用路由器，NAS 等网络边缘节点闲置的带宽、存储资源，构筑更接近用户的内容分发网络(CDN)、计算资源池，大大减少主干网络和数据中心的压力。</p>
-                <p><span class="title">工作内容:</span>负责大部分前端项目的设计与开发和部分后端接口开发。实习期间参与过后台调度算法优化和C语言SDK项目的重构和跨平台移植工作。</p>
+                <p><span class="title">公司简介:</span>利用路由器，NAS
+                    等网络边缘节点闲置的带宽、存储资源，构筑更接近用户的内容分发网络(CDN)、计算资源池，大大减少主干网络和数据中心的压力。</p>
+                <p><span class="title">工作内容:</span>负责大部分前端项目的设计与开发和部分后端接口开发。实习期间参与过后台调度算法优化和 C 语言 SDK 项目的重构和跨平台移植工作。</p>
             </div>
 
         </section>
@@ -51,18 +52,31 @@
                 <p><span class="title">项目描述:</span>通用的权限系统，应用于公司所有前端应用。</p>
                 <div class="main-work">
                     <span class="title">主要工作:</span>
-                <ul>
-                    <li>基于 RBAC 标准，结合实际业务需求，设计权限系统模型。</li>
-                    <li>设计数据库，实现后台权限服务。</li>
-                    <li>前端根据登录用户的权限渲染页面，后端API通过中间件验证用户是否有该接口权限。</li>
-                </ul>
+                    <ul>
+                        <li>
+                            参考其他人分享的基于 RBAC（基于角色的访问控制）的权限设计案例，结合实际业务需求，设计权限系统模型。
+                        </li>
+                        <li>
+                            设计数据库，实现后台权限服务。
+                        </li>
+                        <li>
+                            前端根据登录用户的权限渲染页面，后端 API 通过中间件验证用户是否有该接口权限。
+                        </li>
+                    </ul>
                 </div>
                 <div class="result">
                     <span class="title">项目成果:</span>
-                <ul>
-                    <li>实现了什么功能。</li>
-                    <li>学到了什么经验。</li>
-                </ul>
+                    <ul>
+                        <li>
+                            让组织管理员可以通过前端页面轻松控制成员的权限，且能即时生效，相比过去硬编码的权限，极大降低了配置和修改用户权限的成本。
+                        </li>
+                        <li>
+                            用 React 条件渲染，根据用户权限渲染 Route，避免用户通过输入路径访问无权限的页面。
+                        </li>
+                        <li>
+                            设计权限系统模型，加深了对 RBAC 的理解。
+                        </li>
+                    </ul>
                 </div>
             </div>
 
@@ -71,19 +85,23 @@
                 <p><span class="title">项目描述:</span>提供雾节点运维、用户运维、大户财务结算功能。</p>
                 <div class="main-work">
                     <span class="title">主要工作:</span>
-                <ul>
-                    <li>用 React 全家桶 + material-ui 搭建项目，用 recharts 实现节点数据可视化。</li>
-                    <li>Golang 开发后台 API。</li>
-                </ul>
+                    <ul>
+                        <li>用 React 全家桶 + material-ui 搭建项目，用 recharts 实现节点数据可视化。</li>
+                        <li>Golang 开发后台 API。</li>
+                    </ul>
                 </div>
                 <div class="result">
                     <span class="title">项目成果:</span>
-                <ul>
-                    <li>实现了什么功能。</li>
-                    <li>学到了什么经验。</li>
-                </ul>
+                    <ul>
+                        <li>
+                            前端引入集合运算（交、并、差），结合详细的节点筛选功能，为运维提供灵活的节点操作功能。
+                        </li>
+                        <li>
+                            利用 recharts 库实现节点实时带宽数据可视化。
+                        </li>
+                    </ul>
                 </div>
-                
+
             </div>
 
             <div class="project">
@@ -91,19 +109,26 @@
                 <p><span class="title">项目描述:</span>公司所有系统都统一通过这个页面来登录，提供登录跳转、第三方登录、注册、修改及找回密码的功能。</p>
                 <div class="main-work">
                     <span class="title">主要工作:</span>
-                <ul>
-                    <li>通过URL参数获取用户实际要登录的系统，并将其系统名称动态渲染到页面，登录成功后自动跳转到目的网页。</li>
-                    <li>接入 QQ、微信、支付宝、微博等第三方登录方式。</li>
-                </ul>
+                    <ul>
+                        <li>通过URL参数获取用户实际要登录的系统，并将其系统名称动态渲染到页面，登录成功后自动跳转到目的网页。</li>
+                        <li>接入 QQ、微信、支付宝、微博等第三方登录方式。</li>
+                    </ul>
                 </div>
                 <div class="result">
                     <span class="title">项目成果:</span>
-                <ul>
-                    <li>实现了什么功能。</li>
-                    <li>学到了什么经验。</li>
-                </ul>
+                    <ul>
+                        <li>
+                            公司所有系统都通过同一个页面登录，减少了新系统接入的开发工作量，也更方便维护。
+                        </li>
+                        <!-- <li>
+                            支持第三方账户登录，方便用户。
+                        </li> -->
+                        <li>
+                            接入第三方登录方式，加深了对 OAuth 协议的了解。
+                        </li>
+                    </ul>
                 </div>
-                
+
             </div>
 
             <div class="project">
@@ -111,19 +136,23 @@
                 <p><span class="title">项目描述:</span>面向普通用户，提供设备绑定、新用户邀请、设备收益发放、兑换商城、微信红包提现、查看设备贡献流量功能。</p>
                 <div class="main-work">
                     <span class="title">主要工作:</span>
-                <ul>
-                    <li>负责前端开发，实现设备自动检测与绑定、设备查看与配置、商品兑换、微信红包提现的功能。</li>
-                    <li>负责后台所有相关 API 的开发，和一个自动计算与发放用户激励的服务。</li>
-                </ul>
+                    <ul>
+                        <li>负责前端开发，实现设备自动检测与绑定、设备查看与配置、商品兑换、微信红包提现的功能。</li>
+                        <li>负责后台所有相关 API 的开发，和一个自动计算与发放用户激励的服务。</li>
+                    </ul>
                 </div>
                 <div class="result">
                     <span class="title">项目成果:</span>
-                <ul>
-                    <li>实现了什么功能。</li>
-                    <li>学到了什么经验。</li>
-                </ul>
+                    <ul>
+                        <li>
+                            通过自动或半自动节点绑定和灵活的收益提取的方式，降低用户的接入门槛和使用难度。
+                        </li>
+                        <li>
+                            利用 material-ui 的 Hide 组件实现 PC 端和移动端的适配。
+                        </li>
+                    </ul>
                 </div>
-                
+
             </div>
 
             <!-- <div class="project">
